@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Gemini 历史记录导航器",
+    "version": "0.0.1",
+    "description": "在 Gemini 网页版对话中生成侧边栏，快速跳转到用户的历史提问。",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://gemini.google.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "styles.css"
+            ]
+        }
+    ]
+}
